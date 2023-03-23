@@ -1,0 +1,17 @@
+.navigationMobile {
+  display: flex;
+  animation-name: BoxGreenPulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position: relative;
+  height: 12vh;
+  width: 100vw;
+}
+.navigationMobile .mobileIcon {
+  position: relative;
+  margin: auto;
+  animation-name: TextGreenPulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  font-size: 1.4em;
+}

@@ -1,0 +1,37 @@
+.headerMobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 88vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerMobile .demo-carousel {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  height: 12%;
+  overflow: hidden;
+  animation-name: BoxGreenPulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.headerMobile .logo {
+  position: relative;
+  width: 60%;
+  max-width: calc(50vh);
+  border-radius: 50%;
+  animation-name: BoxGreenPulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.headerMobile h1 {
+  animation-name: TextGreenPulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  font-family: "Teko", sans-serif;
+}

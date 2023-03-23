@@ -1,0 +1,50 @@
+body {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #2e282a;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  animation-name: BoxGreenPulseInner;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes BoxGreenPulse {
+  from {
+    box-shadow: 0px 0px 5px 4px #00adb5;
+  }
+  50% {
+    box-shadow: 0px 0px 2px 3px #ff5722;
+  }
+  to {
+    box-shadow: 0px 0px 5px 4px #00adb5;
+  }
+}
+
+@keyframes BoxGreenPulseInner {
+  from {
+    box-shadow: inset 0px 0px 5px 5px #00adb5;
+  }
+  50% {
+    box-shadow: inset 0px 0px 2px 3px #ff5722;
+  }
+  to {
+    box-shadow: inset 0px 0px 5px 5px #00adb5;
+  }
+}
+
+@keyframes TextGreenPulse {
+  from {
+    color: #00adb5;
+  }
+  50% {
+    color: #ff5722;
+  }
+  to {
+    color: #00adb5;
+  }
+}
