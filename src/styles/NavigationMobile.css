@@ -1,17 +1,57 @@
 .navigationMobile {
   display: flex;
-  animation-name: BoxGreenPulse;
+  animation-name: BoxGreenPulseInner;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  position: relative;
-  height: 12vh;
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  min-height: 55px;
   width: 100vw;
+  background-color: #2e282a;
+  transition: 1s;
+  flex-direction: column;
+  border-radius: 5px;
 }
 .navigationMobile .mobileIcon {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15px;
+  font-size: 4vh;
+  display: block;
+  color: #eeeeee;
+}
+
+.navigationMobile h3 {
+  display: flex;
+  font-family: "Teko", sans-serif;
+  font-size: 5vh;
   margin: auto;
-  animation-name: TextGreenPulse;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  font-size: 1.4em;
+  opacity: 0;
+  transition: 0.5s;
+  color: #eeeeee;
+}
+
+.navigationMobile span {
+  display: flex;
+  margin: auto;
+}
+
+.navigationMobile span:first-of-type {
+  margin-top: max(10vh, 55px);
+}
+.navigationMobile span:last-of-type {
+  margin-bottom: 20px;
+}
+
+.navigationMobile .active {
+  width: 94vw;
+  background-color: #ff5722;
+  text-align: center;
+  opacity: 1;
+  border-radius: 5px;
+  padding: 0;
 }

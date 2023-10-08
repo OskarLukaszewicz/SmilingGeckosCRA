@@ -1,50 +1,169 @@
-body {
-  min-height: 100vh;
+@font-face {
+  font-family: "tekoFont";
+  src: url(../fonts/Teko-Regular.ttf);
 }
 
-.app {
-  min-height: 100vh;
-  background-color: #2e282a;
-  color: #eeeeee;
-  display: flex;
-  flex-direction: column;
-  animation-name: BoxGreenPulseInner;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+@media screen and (min-width: 769px) {
+  .app {
+    position: relative;
+    width: 90vw;
+    margin: 80px auto;
+    min-height: 100vh;
+    background-color: #2e282a;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    border: 0.35rem solid;
+    border-image: conic-gradient(
+        from var(--angle),
+        var(--c2),
+        var(--c1) 0.1turn,
+        var(--c1) 0.15turn,
+        var(--c2) 0.25turn
+      )
+      30;
+    animation: borderRotate var(--d) linear infinite forwards;
+
+    font-family: "tekoFont";
+  }
+
+  @media screen and (max-width: 992px) {
+    .app {
+      width: 100vw;
+    }
+  }
+
+  .background {
+    min-height: 100vh;
+    background-image: url("../images/tlo11.jpg");
+    display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+  }
+
+  .backgroundGradient {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @keyframes BoxGreenPulseLogo {
+    from {
+      box-shadow: 0px 0px 2px 2px #00adb5;
+    }
+    50% {
+      box-shadow: 0px 0px 2px 2px #00adb5;
+    }
+    75% {
+      box-shadow: 0px 0px 5px 4px #ff5722;
+    }
+    to {
+      box-shadow: 0px 0px 2px 2px #00adb5;
+    }
+  }
+
+  @keyframes BoxGreenPulse {
+    from {
+      box-shadow: 0px 0px 5px 4px #00adb5;
+    }
+    50% {
+      box-shadow: 0px 0px 2px 2px #00adb5;
+    }
+    to {
+      box-shadow: 0px 0px 5px 4px #00adb5;
+    }
+  }
+
+  @keyframes BoxGreenPulseInner {
+    from {
+      box-shadow: inset 0px 0px 5px 5px #00adb5;
+    }
+    50% {
+      box-shadow: inset 0px 0px 2px 2px #00adb5;
+    }
+    to {
+      box-shadow: inset 0px 0px 5px 5px #00adb5;
+    }
+  }
+
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 90deg;
+    inherits: true;
+  }
+
+  @property --gradX {
+    syntax: "<percentage>";
+    initial-value: 50%;
+    inherits: true;
+  }
+
+  @property --gradY {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: true;
+  }
+
+  :root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+
+    --c1: #ff5722;
+    --c2: #00adb5;
+  }
+
+  @keyframes borderRotate {
+    100% {
+      --angle: 420deg;
+    }
+  }
 }
 
-@keyframes BoxGreenPulse {
-  from {
-    box-shadow: 0px 0px 5px 4px #00adb5;
+@media screen and (max-width: 769px) {
+  body {
+    min-height: 100%;
   }
-  50% {
-    box-shadow: 0px 0px 2px 3px #ff5722;
-  }
-  to {
-    box-shadow: 0px 0px 5px 4px #00adb5;
-  }
-}
 
-@keyframes BoxGreenPulseInner {
-  from {
-    box-shadow: inset 0px 0px 5px 5px #00adb5;
+  .app {
+    min-height: 100vh;
+    background-color: #2e282a;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    animation-name: BoxGreenPulseInner;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+    font-family: "Teko", sans-serif;
+    width: 100vw;
   }
-  50% {
-    box-shadow: inset 0px 0px 2px 3px #ff5722;
-  }
-  to {
-    box-shadow: inset 0px 0px 5px 5px #00adb5;
-  }
-}
 
-@keyframes TextGreenPulse {
-  from {
-    color: #00adb5;
+  @keyframes BoxGreenPulse {
+    from {
+      box-shadow: 0px 0px 5px 4px #00adb5;
+    }
+    50% {
+      box-shadow: 0px 0px 2px 2px #00adb5;
+    }
+    to {
+      box-shadow: 0px 0px 5px 4px #00adb5;
+    }
   }
-  50% {
-    color: #ff5722;
-  }
-  to {
-    color: #00adb5;
+
+  @keyframes BoxGreenPulseInner {
+    from {
+      box-shadow: inset 0px 0px 5px 5px #00adb5;
+    }
+    50% {
+      box-shadow: inset 0px 0px 2px 2px #00adb5;
+    }
+    to {
+      box-shadow: inset 0px 0px 5px 5px #00adb5;
+    }
   }
 }

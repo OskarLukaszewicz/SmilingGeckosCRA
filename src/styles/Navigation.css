@@ -1,0 +1,71 @@
+.navigation .navDiv {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  left: -1px;
+  width: calc((50%) - 105px);
+  border-bottom: 0.3rem solid #00adb5;
+}
+
+.navigation:nth-child(3) div {
+  left: calc((50%) + 106px);
+}
+
+.navMenuButton {
+  height: 43.4px;
+  transition: color 0s, height 0.5s;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.navMenuButton div span {
+  margin-left: 0px;
+  border-left: 20px solid transparent;
+  transition: 0.3s;
+}
+
+.navMenuButton div span:hover {
+  border-left: 20px solid #00adb5;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 173, 181, 0.05);
+  padding: 5px;
+  z-index: 1;
+}
+
+.navigation h3 {
+  margin: 0px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: 0.2s;
+  text-shadow: 3px 3px 6px #ff5722;
+}
+
+.navigation span {
+  margin: auto;
+  padding-bottom: 5px;
+}
+.navigation .active h3 {
+  color: #ff5722;
+  text-shadow: none;
+}
+
+.navigation h3:hover {
+  transform: scale(1.2, 1.2);
+  text-shadow: 0px 0px 0px #ff5722;
+  color: transparent;
+}
+
+.expandArrow {
+  height: 22px;
+  cursor: pointer;
+  transition: 0.25s;
+  padding-left: 10px;
+  padding-top: 5px;
+}

@@ -1,0 +1,57 @@
+.blog .pWrapper {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 50px;
+}
+
+.blog .pWrapper:last-of-type {
+  border: none;
+  margin-bottom: none;
+}
+
+.blog span {
+  width: 100%;
+  text-align: end;
+  padding-right: 15px;
+}
+
+.blogImg {
+  width: 200px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  transition: 0.5s;
+}
+
+.blogImg:hover {
+  border: 1px solid #ff5722;
+}
+
+@media screen and (max-width: 520px) {
+  .blogImg {
+    width: 160px;
+  }
+}
+
+.PostLink {
+  transition: 0.5s;
+}
+
+.PostLink:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.pagin {
+  display: inline-block;
+  align-self: center;
+}
+
+.pagin button {
+  width: 60px;
+  height: 25px;
+  margin: 5px;
+  background-color: #00adb5;
+  border: 2px solid #eeeeee;
+  cursor: pointer;
+  border-radius: 5px;
+}

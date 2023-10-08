@@ -1,0 +1,85 @@
+.blogPost span {
+  width: 100%;
+  text-align: end;
+  padding-right: 15px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.commentsContainer {
+  width: 100%;
+  align-self: center;
+  max-width: 1200px;
+  padding-bottom: 50px;
+}
+
+.blogPost .pWrapper {
+  margin-bottom: 10px !important;
+}
+
+.blogImg {
+  width: 200px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  transition: 0.5s;
+}
+
+.blogImg:hover {
+  border: 1px solid #ff5722;
+}
+
+@media screen and (max-width: 520px) {
+  .blogImg {
+    width: 160px;
+  }
+  .comment {
+    width: 100% !important;
+  }
+}
+
+.PostLink {
+  transition: 0.5s;
+}
+
+.PostLink:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.comment {
+  margin: 30px;
+  margin-top: 0;
+}
+
+.comment h5 {
+  font-size: larger;
+  margin: 0;
+}
+
+.comment p {
+  margin: 0;
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+
+.commentsContainer {
+  padding-left: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comment span {
+  font-size: 1.4em;
+}
+
+.comments {
+  display: inline-block;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.form {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}

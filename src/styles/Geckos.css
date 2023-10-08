@@ -1,0 +1,168 @@
+.geckos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.geckos .header {
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+.geckos span {
+  margin: auto;
+  cursor: pointer;
+  min-width: 255px;
+}
+
+.geckos .active {
+  color: #ff5722;
+}
+
+.geckos h3:hover {
+  color: #ff5722;
+}
+
+.reserveButton {
+  transform: translate(0, -4px);
+}
+
+.geckos button {
+  font-weight: 600;
+  width: 80px;
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #00adb5;
+  opacity: 0.9;
+  margin: 5px;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.geckos .buttonOff {
+  opacity: 0.4;
+}
+
+.geckos button svg {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.geckos .gekList {
+  padding: 5px 7vw;
+  margin-bottom: 3vh;
+}
+
+.itemContainer {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 188.5px;
+  margin: 0 4px 0 4px;
+}
+
+.reserved {
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.galleryIcon {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: transparent;
+}
+
+.reservationInput {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.galleryIcon:hover {
+  color: white !important;
+}
+
+.geckos img {
+  width: 250px;
+  height: 188.5px;
+  border-radius: 3px;
+  transition: opacity 1s;
+  z-index: 3;
+  border: 1px solid rgba(0, 172, 181, 0.4);
+}
+
+.geckos img:hover {
+  opacity: 0.95;
+}
+
+.itemContainer .tl {
+  top: 8px;
+  left: 16px;
+}
+.itemContainer .br {
+  bottom: 8px;
+  right: 16px;
+}
+
+.tl,
+.br {
+  opacity: 0;
+  position: absolute;
+  font-family: "Teko", sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 769px) {
+  .geckos .header {
+    display: flex;
+    font-size: 1.5em;
+    transform: translate(0, -60px);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .geckos .gekList {
+    padding: 0;
+    margin: 9vh 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .geckos .itemContainer {
+    width: 170px;
+    height: 128.2px;
+    margin: -7px 1px 0px 1px;
+  }
+
+  .geckos img {
+    width: 170px;
+    height: 128.2px;
+  }
+}
+
+.reservationPanel {
+  width: 180px;
+  height: 40px;
+  background-color: #00adb5;
+  opacity: 0.95;
+  position: fixed;
+  bottom: 80px;
+  border-radius: 14px;
+  right: calc(50% - 90px);
+  border: 2px solid white;
+}
+
+.reservationPanel button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}

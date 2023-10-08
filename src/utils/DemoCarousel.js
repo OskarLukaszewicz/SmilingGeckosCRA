@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import logo from "../images/logo.jpg";
+import slide1 from "../images/slide1.jpg";
+import slide2 from "../images/slide2.jpg";
+import slide3 from "../images/slide3.jpg";
 
 class DemoCarousel extends Component {
   render() {
@@ -15,18 +17,16 @@ class DemoCarousel extends Component {
         showIndicators={false}
         showThumbs={false}
         swipeable={false}
-        centerMode={true}
-        centerSlidePercentage={80}
         verticalSwipe="natural"
       >
         <div>
-          <img src={logo} alt=" " />
+          <img src={slide3} className="sliderImage" alt=" " />
         </div>
         <div>
-          <img src={logo} alt=" " />
+          <img src={slide2} className="sliderImage" alt=" " />
         </div>
         <div>
-          <img src={logo} alt=" " />
+          <img src={slide1} className="sliderImage" alt=" " />
         </div>
       </Carousel>
     );
